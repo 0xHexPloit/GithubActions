@@ -1,0 +1,14 @@
+name: TestingWorkflowDispatch
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        description: Your first name
+        required: true
+        
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "Hello ${{ inputs.name  }} ! Nice to meet you :)"
