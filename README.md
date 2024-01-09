@@ -1,0 +1,1 @@
+A simple project to experiment Github Actions!
